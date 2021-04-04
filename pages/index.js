@@ -20,7 +20,7 @@ export default function Home() {
         <Flex justify="center" wrap="1">
           <Link href="/bookings">
             <Button size="md" colorScheme="green" mt="6">
-              Go to Listings
+              Check all bookings
             </Button>
           </Link>
           <Link href="/book">
