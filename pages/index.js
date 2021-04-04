@@ -17,7 +17,7 @@ export default function Home() {
         <Text fontSize="xl">
           Make use of the summer by booking a get together with family.
         </Text>
-        <Flex justify="center" wrap="1">
+        <Flex justify="center">
           <Link href="/bookings">
             <Button size="md" colorScheme="green" mt="6">
               Check all bookings
