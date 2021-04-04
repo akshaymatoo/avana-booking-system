@@ -68,6 +68,8 @@ export default  function Book() {
     				  <option value="Gym">Gym</option>
               <option value="Conference room">Conference room</option>
               <option value="Fire place">Fire place</option>
+              <option value="Swimming pool">Swimming pool</option>jacuzzi
+              <option value="Jacuzzi">Jacuzzi</option>
     				</Select>
           </FormControl>
 
