@@ -5,10 +5,9 @@ import {db} from '../../db/firebase';
 export default  function Bookings( {columns,bookings}) {
 
   return (
-    <Center mt={12} overflow="hidden">
-    <Box bg="orange" w="80vw" my="32" mx="auto">
+    <Center mt={12} overflowY="hidden">
+    <Box w="80vw" my="32" mx="auto">
      <DataTable data={bookings} columns ={columns} /> 
-     hello
     </Box>
     </Center>
   );
