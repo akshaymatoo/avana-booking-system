@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import { Box,Text,Button,Heading,Flex,Center } from "@chakra-ui/react"
+import { Box,Text,Button,Heading,Flex,Center,VStack } from "@chakra-ui/react"
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <Center my={250} alignItems="center" overflow="hidden">
+    <Center  overflow="hidden">
+    <Flex h="90vh" justify="center" align="center">
       <Head>
         <title>Avana Bookings</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,17 +19,18 @@ export default function Home() {
         </Text>
         <Flex justify="center" wrap="1">
           <Link href="/bookings">
-            <Button size="lg" colorScheme="green" mt="6">
+            <Button size="md" colorScheme="green" mt="6">
               Go to Listings
             </Button>
           </Link>
           <Link href="/book">
-            <Button size="lg" colorScheme="green" ml="6" mt="6">
+            <Button size="md" colorScheme="green" ml="6" mt="6">
               Create a Booking
             </Button>
           </Link>
         </Flex>
       </Box>
+      </Flex>
     </Center>
   )
 }
