@@ -11,12 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
  <Center  overflow="hidden">
-    <Flex h="90vh" justify="center" align="center">
-      <Box>
+    <Flex h="90vh" direction="column"justify="center" align="center">
+       
         <Heading mb={4}>Get access to Avana beautiful amenities</Heading>
         <Text fontSize="xl">
           Make use of the summer by booking a get together with family.
         </Text>
+
         <Flex justify="center">
           <Link href="/bookings">
             <Button size="md" colorScheme="green" mt="6">
@@ -29,7 +30,7 @@ export default function Home() {
             </Button>
           </Link>
         </Flex>
-      </Box>
+      
       </Flex>
     </Center></>
   )
