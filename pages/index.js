@@ -5,13 +5,13 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <Center  overflow="hidden">
-    <Flex h="90vh" justify="center" align="center">
+   <>
       <Head>
         <title>Avana Bookings</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+ <Center  overflow="hidden">
+    <Flex h="90vh" justify="center" align="center">
       <Box>
         <Heading mb={4}>Get access to Avana beautiful amenities</Heading>
         <Text fontSize="xl">
@@ -31,6 +31,6 @@ export default function Home() {
         </Flex>
       </Box>
       </Flex>
-    </Center>
+    </Center></>
   )
 }

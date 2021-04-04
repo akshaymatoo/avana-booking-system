@@ -1,13 +1,16 @@
-import { Box } from "@chakra-ui/react";
+import { Box,Center } from "@chakra-ui/react";
 import DataTable from '../../components/DataTable';
 import {db} from '../../db/firebase';
 
 export default  function Bookings( {columns,bookings}) {
 
   return (
-    <Box  borderColor="gray.200"  w="80vw" my="32" mx="auto">
-     <DataTable data={bookings} columns ={columns} />
+    <Center mt={12} overflow="hidden">
+    <Box bg="orange" w="80vw" my="32" mx="auto">
+     <DataTable data={bookings} columns ={columns} /> 
+     hello
     </Box>
+    </Center>
   );
 }
 

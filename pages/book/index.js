@@ -95,9 +95,6 @@ export default  function Book() {
             <Input
               type="date"
               name="date"
-              
-              min="04/04/2021"
-              max="04/05/2021"
               placeholder="Booking date"
             />
           </FormControl>
