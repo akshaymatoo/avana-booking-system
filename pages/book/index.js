@@ -1,3 +1,4 @@
+import React,{ useState} from 'react';
 import { useForm } from "react-hook-form";
 import styles from '../../styles/Home.module.css';
 import { Icon,useToast } from "@chakra-ui/react";
@@ -22,14 +23,7 @@ import {db} from '../../db/firebase';
 export default  function Book() {
 	const { handleSubmit, errors, register, formState } = useForm();
 	const toast = useToast();
-
-	function validateName(value) {
-		console.log("value passed ",value);
-	  if (!value) {
-	    return "Name is required";
-	  } else return true;
-	}
-
+  const date = new Date();
 	const registerBooking = async event => {
     event.preventDefault();
     
@@ -101,6 +95,9 @@ export default  function Book() {
             <Input
               type="date"
               name="date"
+              
+              min="04/04/2021"
+              max="04/05/2021"
               placeholder="Booking date"
             />
           </FormControl>
@@ -129,4 +126,14 @@ export default  function Book() {
       </Box>
     </Center>
   );
+}
+
+export async function getInitialProps() {
+    console.log(" -- getInitialProps -- ")
+    
+    return {
+      props:{ 
+        date:new Date(),
+      }
+    }
 }

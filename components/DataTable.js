@@ -15,7 +15,7 @@ function DataTable({columns,data}) {
   } = useTable({ columns, data }, useSortBy)
 
   return (
-    <Table {...getTableProps()}>
+    <Table variant="striped" {...getTableProps()}>
       <Thead>
         {headerGroups.map((headerGroup) => (
           <Tr {...headerGroup.getHeaderGroupProps()}>

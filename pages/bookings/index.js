@@ -12,7 +12,6 @@ export default  function Bookings( {columns,bookings}) {
 }
 
 export async function getServerSideProps() {
-    console.log(" -- getServerSideProps -- ")
     const dataSnapshot = await db.collection('bookings').get();
     let data = [];
     dataSnapshot.forEach((doc) => {
@@ -22,7 +21,6 @@ export async function getServerSideProps() {
     const columnsSnapshot = await db.collection('columns').get();
     let columnsD = [];
     columnsSnapshot.forEach((doc) => {
-      console.log(doc.id,doc.data());
       columnsD.push(doc.data());
     });
 
@@ -33,21 +31,6 @@ export async function getServerSideProps() {
         accessor:key
       })
     })
-     
-    /*
-    {
-        Header: "To convert",
-        accessor: "fromUnit",
-      },
-      {
-        Header: "Into",
-        accessor: "toUnit",
-      },
-      {
-        Header: "Multiply by",
-        accessor: "factor",
-        isNumeric: true,
-      },*/
     return {
       props:{ 
         bookings:data,
