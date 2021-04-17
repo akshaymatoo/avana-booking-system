@@ -1,12 +1,12 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDPeKUcaU_bu3YQLR8tZ6wsdQj36w5-9qM",
-  authDomain: "avana-ed68d.firebaseapp.com",
-  projectId: "avana-ed68d",
-  storageBucket: "avana-ed68d.appspot.com",
-  messagingSenderId: "159729076346",
-  appId: "1:159729076346:web:06f7194f803069835293c3"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID
 };
 
 const app = !firebase.apps.length

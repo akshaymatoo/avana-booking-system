@@ -2,6 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Create .env file if not present and add your firebase configurations there in the below format
+
+REACT_APP_APIKEY=,
+REACT_APP_AUTHDOMAIN=,
+REACT_APP_PROJECTID=,
+REACT_APP_STORAGEBUCKET=,
+REACT_APP_MESSAGINGSENDERID=,
+REACT_APP_APPID=
+
 First, run the development server:
 
 ```bash
